@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1310568767229048932}
   - component: {fileID: 1310568767229048933}
   - component: {fileID: -7992866691901921262}
+  - component: {fileID: 518604343569310985}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: dungcu
@@ -61,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 72d7f49a5d9f8cb4e8331308ae411a68, type: 2}
+  - {fileID: 2100000, guid: 5171ade074a9a6f4f9e5e2c13acd5d89, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -138,3 +139,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea45ea14994b7804584f4704eb9116d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &518604343569310985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310568767229048955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55f6df53e0f21dc459a484b16a3fab17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isrewinding: 0
