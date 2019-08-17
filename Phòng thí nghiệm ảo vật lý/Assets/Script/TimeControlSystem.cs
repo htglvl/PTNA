@@ -40,6 +40,7 @@ public class TimeControlSystem : MonoBehaviour
         }
         timesclider = TimeControl.value;
         timeword.text = timesclider.ToString();
+        Time.timeScale = Mathf.Abs(timesclider);    
     }
-
+    
 }
