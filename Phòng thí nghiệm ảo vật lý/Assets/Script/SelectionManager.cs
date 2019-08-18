@@ -16,15 +16,6 @@ public class SelectionManager : MonoBehaviour
         {
             var selectionRenderer = _selection.GetComponent<Renderer>();
             selectionRenderer.material = defaultMaterial;
-            /*if (_selection.GetComponent<ruler>() != null)
-            {
-                _selection.GetComponent<ruler>().selec = false;
-            }
-            if (_selection.GetComponent<stat>() != null)
-            {
-                _selection.GetComponent<stat>().selec = false;
-            } */
-
             _selection = null;
         }
 

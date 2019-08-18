@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -7992866691901921262}
   - component: {fileID: 518604343569310985}
   - component: {fileID: 5813102202479133784}
+  - component: {fileID: 374832855907367944}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: dungcu
@@ -123,7 +124,7 @@ Rigidbody:
   m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -165,5 +166,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e320cec8e7e22044585e5270bf542e2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubestat: {fileID: 0}
+  isStopTime: 0
   selec: 0
+--- !u!114 &374832855907367944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310568767229048955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b98819dce0bb94ca994d78bf4b2216, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circlespeed: 0
+  width: 0
+  height: 0
