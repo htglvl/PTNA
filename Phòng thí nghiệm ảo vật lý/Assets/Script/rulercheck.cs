@@ -8,8 +8,8 @@ public class rulercheck : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ball = GameObject.Find("Sphere");
-        ball1 = GameObject.Find("Sphere (1)");
+        ball = GameObject.Find("Cube");
+        ball1 = GameObject.Find("Cube (1)");
     }
 
     // Update is called once per frame

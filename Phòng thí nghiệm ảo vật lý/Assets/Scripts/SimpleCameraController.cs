@@ -34,13 +34,13 @@ namespace UnityTemplateProjects
 
             public void LerpTowards(CameraState target, float positionLerpPct, float rotationLerpPct)
             {
-                yaw = Mathf.Lerp(yaw, target.yaw, rotationLerpPct);
-                pitch = Mathf.Lerp(pitch, target.pitch, rotationLerpPct);
-                roll = Mathf.Lerp(roll, target.roll, rotationLerpPct);
+                yaw = target.yaw;
+                pitch = target.pitch;
+                roll = target.roll;
                 
-                x = Mathf.Lerp(x, target.x, positionLerpPct);
-                y = Mathf.Lerp(y, target.y, positionLerpPct);
-                z = Mathf.Lerp(z, target.z, positionLerpPct);
+                x = target.x;
+                y = target.y;
+                z = target.z;
             }
 
             public void UpdateTransform(Transform t)
@@ -142,7 +142,7 @@ namespace UnityTemplateProjects
             }
             
             // Translation
-            var translation = GetInputTranslationDirection() * Time.deltaTime;
+            var translation = GetInputTranslationDirection();
 
             // Speed up movement when shift key held
             if (Input.GetKey(KeyCode.LeftShift))
@@ -158,8 +158,8 @@ namespace UnityTemplateProjects
 
             // Framerate-independent interpolation
             // Calculate the lerp amount, such that we get 99% of the way to our target in the specified time
-            var positionLerpPct = 1f - Mathf.Exp((Mathf.Log(1f - 0.99f) / positionLerpTime) * Time.deltaTime);
-            var rotationLerpPct = 1f - Mathf.Exp((Mathf.Log(1f - 0.99f) / rotationLerpTime) * Time.deltaTime);
+            var positionLerpPct = 1f - Mathf.Exp((Mathf.Log(1f - 0.99f) / positionLerpTime));
+            var rotationLerpPct = 1f - Mathf.Exp((Mathf.Log(1f - 0.99f) / rotationLerpTime));
             m_InterpolatingCameraState.LerpTowards(m_TargetCameraState, positionLerpPct, rotationLerpPct);
 
             m_InterpolatingCameraState.UpdateTransform(transform);

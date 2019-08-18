@@ -7,6 +7,7 @@ using TMPro;
 
 public class TimeBody : MonoBehaviour
 {
+    [HideInInspector]
     public bool isrewinding = false;
     List<PointInTime> pointInTimes;
     Rigidbody RB;
