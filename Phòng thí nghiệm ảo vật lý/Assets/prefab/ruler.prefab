@@ -346,6 +346,7 @@ MonoBehaviour:
   Origin: {fileID: 1158792702800556448}
   Destination: {fileID: 1158792702352247097}
   lineDrawSpeed: 0
+  stat: {fileID: 0}
 --- !u!114 &1158792702800556473
 MonoBehaviour:
   m_ObjectHideFlags: 0

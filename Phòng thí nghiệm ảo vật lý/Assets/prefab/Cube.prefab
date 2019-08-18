@@ -16,9 +16,10 @@ GameObject:
   - component: {fileID: 694232019030393215}
   - component: {fileID: 9014657977767840525}
   - component: {fileID: 5946003326113531923}
+  - component: {fileID: 3132232776411841132}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: dungcu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5171ade074a9a6f4f9e5e2c13acd5d89, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -108,7 +109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abcfa6838bf62ed488606cd84444ccff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itembutton: {fileID: 0}
+  itembutton: {fileID: 2588058440151717586, guid: 3dc7b5c777f5f31499f8a5ac192d432f,
+    type: 3}
   ischoosen: 0
 --- !u!54 &694232019030393215
 Rigidbody:
@@ -120,12 +122,12 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!114 &9014657977767840525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,4 +153,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isrewinding: 0
-  Cam: {fileID: 0}
+--- !u!114 &3132232776411841132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4166125990233132111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e320cec8e7e22044585e5270bf542e2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cubestat: {fileID: 0}
+  selec: 0
